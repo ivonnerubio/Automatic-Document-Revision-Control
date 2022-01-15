@@ -22,8 +22,8 @@ REQUIREMENTS
 
 This control requires the following items:
 
- * Post Load.groovy
- * On Load.groovy
+ * Post Load.java
+ * On Load.java
  * Edit Attributes Onload Trigger
  * Publish Documents Onload Trigger
  * Publish Documents Post Load Trigger
