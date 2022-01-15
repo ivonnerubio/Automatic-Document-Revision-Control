@@ -1,17 +1,17 @@
 def execute(){
 
 
-    //create a json object with the details of the current file
+    //Create a json object with the details of the current file
     JsonArray attributeDetailsList = new JsonArray();
     DocumentVO document = documentService.getDocumentDetails();
 
                    
-    //set the default value for the revision as Auto
+    //Set the default value for the revision as Auto
     String revDefaultValue = "Auto";
     attributeDetailsList.add(getAttributeJSON(IDocumentAttribute.REV, IDocumentAttribute.STANDARD, IDocumentAttribute.READ_ONLY, revDefaultValue)); // Params: Attribute Name, Type Of Atribute, Editable/Read Only, default value
 
 
-    // set the revision
+    //Set the revision
     document.setResponseStatus(false);
 
     document.setDynamicObject(attributeDetailsList.toString());
