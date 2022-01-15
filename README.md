@@ -57,4 +57,4 @@ INSTALLATION
 	- Task Mode: Post
 	- Task: Automatic Revision Control On Load
 
-You're folder should now have the rev control :)
+Congratulations! Your folder should have the revision control.
