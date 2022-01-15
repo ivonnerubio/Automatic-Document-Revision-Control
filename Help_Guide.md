@@ -19,9 +19,9 @@
      ![Screen Shot 2022-01-14 at 7 46 36 PM](https://user-images.githubusercontent.com/28023005/149604298-992e02e4-0bb9-465d-a448-92921557122c.png)
 
    7. Once the file is uploaded the Revision will be 01.
-       
+       ![Screen Shot 2022-01-15 at 1 19 34 PM](https://user-images.githubusercontent.com/28023005/149635091-4438d7bd-1c8b-4a15-9e30-a90523032c86.png)
 
-To summarize, the revision will only increase when a new file is uploaded by a user. The version will work the same as in the past. If another file were to be uploaded, it will continue to automatically increment the revision by 1.
+   8. To summarize, the revision will only increase when a new file is uploaded by a user. The version will work the same as in the past. If another file were to be uploaded, it will continue to automatically increment the revision by 1.
 
 
 
@@ -33,7 +33,7 @@ To summarize, the revision will only increase when a new file is uploaded by a u
 
    3. For the file below, the revision is 2, this revision was chosen by the user before the automatic revision was implemented. 
 
-   4. If you upload a new file for this file, the file screen will have the Rev option as Auto and will no longer require you to enter any digit. 
+   4. If you upload a new file for this file, the file screen will have the Rev option as Auto   nd will no longer require you to enter any digit. 
  
    5. Once the file is uploaded, the revision will automatically increment from the previous revision. Since the revision was previously 2 the new revision for the file will now be 03.
 
