@@ -1,6 +1,6 @@
 def execute(){
   
-    // get the current revision of the document and initialize a global revision variable that will be applied to the file
+    //Get the current revision of the document and initialize a global revision variable that will be applied to the file
     DocumentVO document = documentService.getDocumentDetails();
     String revision_new = document.getRevision();
     String doc_publisher = document.getPublisherName();
@@ -9,7 +9,7 @@ def execute(){
     revision_new ="00";
     }
     
-    // hash map to retrieve the previous revision
+    // Hash map to retrieve the previous revision
     HashMap<Object, Object> optionMap = new HashMap();
 
     optionMap.put(RevisionOption.GET_REVISIONS, RevisionOption.PREVIOUS_REVISION);
@@ -21,10 +21,10 @@ def execute(){
     Map<String, DocumentVO> revisionsMap = documentService.getDocumentRevisionDetail(document, optionMap); // Here revisionsMap will have issue number as key and DocumentVO as value.
   
     if(!doc_publisher.equals("Workflow Agent System")){
-    // if statement to see if the revision map is NOT EMPTY
+    // If statement to see if the revision map is NOT EMPTY
         if(!revisionsMap.isEmpty()){
      
-        // retrieve the revision and save into a String variable
+        // Retrieve the revision and save into a String variable
 
         Map.Entry<String, DocumentVO> entry = revisionsMap.entrySet().iterator().next();
         String docRef_revision = entry.getKey();
@@ -34,12 +34,12 @@ def execute(){
         
         
         if(isInteger(revision_previous)){
-          // convert the string into an integer and add one
+          // Convert the string into an integer and add one
           int revision_pre = Integer.parseInt(revision_previous);
           revision_pre = revision_pre + 1;
 
 
-          // turn the revision to an integer and set the new revision number
+          // Turn the revision to an integer and set the new revision number
           if (revision_pre <= 9) {
               revision_new = "0" + revision_pre.toString();
           }
@@ -52,7 +52,7 @@ def execute(){
         }
       }
   }
-    // apply the new revision to the file
+    // Apply the new revision to the file
     documentContext.getDocVO().revision = revision_new;     
     documentService.updateDocument(documentContext);
 
@@ -66,6 +66,5 @@ public static boolean isInteger(String s) {
         } catch(NullPointerException e) {
             return false;
         }
-        // only got here if we didn't return false
         return true;
 }
