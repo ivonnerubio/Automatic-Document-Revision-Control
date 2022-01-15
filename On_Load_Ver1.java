@@ -16,7 +16,6 @@ def execute(){
     document.setDynamicObject(attributeDetailsList.toString());
     
     return document;
-    
 }
 
      
@@ -34,5 +33,4 @@ private JsonObject getAttributeJSON(String attributeName, boolean isCustomAttrib
     attribute.addProperty("defaultValue", defaultValue);
 
     return attribute;
-
 }
