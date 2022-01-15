@@ -13,7 +13,7 @@ INTRODUCTION
 
 The automatic revision control will automatically increase the revision on a document everytime its uploaded by the user by an increment of 1. Once it is implemented, it will lock the revision and it will appear as "Auto" during the onload screen. As soon as the document is uploaded, the numerical revision will show. 
 
-The help guide located on this repository will walk you further on how the process works om new and previous documents. 
+The help guide located on this repository will walk you further on how the process works on new and previous documents. 
 
 
 
